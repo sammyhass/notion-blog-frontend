@@ -1,0 +1,13 @@
+.Header {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 10px 4px;
+  min-height: 4rem;
+  background: lightblue;
+  margin-bottom: 1.5rem;
+  & h2 {
+    font-size: 2em;
+    cursor: pointer;
+  }
+}

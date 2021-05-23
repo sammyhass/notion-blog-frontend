@@ -1,0 +1,24 @@
+.pageContainer {
+  width: 60%;
+  margin: auto;
+  & .articleHeader {
+    & .title {
+      font-size: 2.4em;
+    }
+    & .dateCreated {
+      margin: 0;
+      color: #6d6d6d;
+    }
+  }
+  & .body {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .articleHeader {
+    text-align: center;
+    width: 100%;
+  }
+}
