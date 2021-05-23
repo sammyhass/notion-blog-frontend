@@ -20,7 +20,7 @@ const Home: NextPage<HomepageProps> = ({ posts }) => {
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const data = await (
-    await fetch(`${process.env.API_ENDPOINT}api/posts/all`)
+    await fetch(`${process.env.API_ENDPOINT.replace(/\s/g, '')}api/posts/all`)
   ).json();
 
   return {

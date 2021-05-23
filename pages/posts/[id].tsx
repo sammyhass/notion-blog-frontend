@@ -35,7 +35,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const { id } = params;
 
   const data = await (
-    await fetch(`${process.env.API_ENDPOINT}api/posts/${id}`)
+    await fetch(`${process.env.API_ENDPOINT.replace(/\s/g, '')}api/posts/${id}`)
   ).json();
 
   return {
